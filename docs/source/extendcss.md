@@ -17,22 +17,6 @@ Modifier le fichier `css/style.css` du thème pour déclarer le (ou les) nouveau
   …
 }
 ```
-### Supprimer l’identité de l’ÉSAD Pyrénées
-
-Pour la couverture, supprimer l’arrière-plan du `header` dans le fichier `css/print.css` :
-```css
-#header {
-  /*background: url(logo.svg) no-repeat 0 100%;*/
-}
-```
-Pour les titre courants, supprimer l’image dans le fichier `body.php`:
-```html
-<!-- le folio courant (version print) -->
-<div class="runningfolio">
-    <span class="folio"></span>
-    <!-- <img src="css/logo.png" alt="ESAD Pyrénées"> -->
-</div>
-```
 
 
 

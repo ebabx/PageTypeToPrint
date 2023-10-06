@@ -3,7 +3,7 @@
 
 Téléchargez le projet :
 
-<a class="bigbutton" href="https://github.com/esadpyrenees/PageTypeToPrint/zipball/main/">↓ Code source </a> 
+<a class="bigbutton" href="https://github.com/ebabx/PageTypeToPrint/zipball/main/">↓ Code source </a> 
 
 Le fichier doit être décompressé dans un environnement de serveur web bénéficiant d’une version de PHP supérieure à 8.0 (par exemple, le dossier `htdocs` dans MAMP ; voir ci-dessous).
 

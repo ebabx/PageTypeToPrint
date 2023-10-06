@@ -30,20 +30,3 @@ Pour diférencier la mise en page des images entre l’écran et l’impression,
 (figure: images/01.jpg class: half print: full)
 ```
 ↑ Cette image occupera la moitié de la largeur de l’empagement en version écran, et la pleine largeur en version imprimable.
-
-
-
-### À l’aide !
-
-Pour aider à la mise en page “visuelle” des images, on peut activer un utilitaire visuel qui aide à déterminer le code d’intégration des images.
-
-En contexte écran, ajouter `/?layout` à l’URL.   
-En contexte de prévisualisation print : `/?print&layout`.   
-
-![image layout helper](images/layout-helper.png)
-
-
-Chaque figure se voit alors doté d’un outil permettant de définir la largeur de la figure (`quarter`, `third`, `half`, `twothird`, `threequarter` ou `full`) et son décalage (`offset0`, `offset2`, `offset4`, `offset6` ou `offset8`). 
-
-⚠️ Le code d’intégration de la figure est alors copié dans le presse-papier, et doit être collé dans le document markdown source. Attention, en contexte d’impression, la mise en page n’est pas recalculée. Il faut modifier le code d’intégration de la figure concernée dans le fichier markdown, l’enregistrer, puis actualiser la page dans le navigateur.
-

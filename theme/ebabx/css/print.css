@@ -65,9 +65,6 @@
   #header {
     page: cover;
     padding: 0;
-    /* identité ÉSAD Pyrénées */
-    background: url(logo.svg) no-repeat 0 100%;
-    background-size: 100% auto;
     height: calc(var(--pagedjs-height) - var(--pagedjs-margin-bottom) - var(--pagedjs-margin-top));
     min-height: 0;
   }

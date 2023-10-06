@@ -8,7 +8,7 @@ Le fichier `config.yml` doit être édité afin d’y référencer les différen
 
 Les logiques d’affichage _screen_ et _print_ sont dépendantes du thème sélectionné dans le fichier `config.yml`: 
 ```yml
-theme: esadpyrenees
+theme: ebabx
 ```
 ### Le contenu
 

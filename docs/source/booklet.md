@@ -1,6 +1,6 @@
 ## Livret A5
 
-Cet exemple se propose de transformer le gabarit d’une simple page A4 (recto seul) vers une double page A5 (recto-verso) en supprimant l’identité de l’ÉSAD Pyrénées.
+Cet exemple se propose de transformer le gabarit d’une simple page A4 (recto seul) vers une double page A5 (recto-verso) en supprimant l’identité de l’EBABX.
 
 Le thème _booklet_ comprend le code résultant de cette modification du thème par défaut. Il est possible de l’activer en le configurant dans le fichier `config.yml`:
 ```yml
@@ -13,7 +13,7 @@ Une démo est visible sur [ateliers.esad-pyrenees.fr/pagetypetoprint/booklet](ht
 * `js/print/pagedjs.css`
     * desactivation de la feuille de style interface/recto-verso.css
 * `body.php`
-    * courants et folio: suppression du logo ESAD et du diplôme
+    * courants et folio: suppression du logo EBABX et du diplôme
     * courants et folio: réorganisation pour positionnement en bas de page uniquement
     * suppression des notes de marge au profit de notes de bas de page : suppression des scripts `js/screen/sideNotes.js` et `js/print/imageNotes.js` 
 * `css/print.css`

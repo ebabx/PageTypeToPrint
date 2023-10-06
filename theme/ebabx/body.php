@@ -15,7 +15,7 @@
     <div class="runningfolio">
         <span class="folio"></span>
         <!-- Logo ÉSAD Pyrénées -->
-        <img src="<?= $theme_url ?>/css/logo.png" alt="ESAD Pyrénées">
+        <!-- <img src="<?= $theme_url ?>/css/logo.png" alt="ESAD Pyrénées"> -->
         <!-- Votre diplôme -->
         <span class="diploma"><?= $diploma ?></span>
     </div>
