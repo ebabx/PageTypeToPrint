@@ -8,7 +8,7 @@
 @import "interface/recto-verso.css";
 
 /* uncomment to see the baseline : */
-/* @import "interface/baseline.css"; */
+@import "interface/baseline.css";
 
 /* @import "interface/header.css"; */
 

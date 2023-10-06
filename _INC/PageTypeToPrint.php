@@ -79,7 +79,7 @@
   include_once 'PageTypeToPrint/AutoFolder.php';
 
   // theme URL
-  $theme_url = "theme/" . ( isset($theme) ? $theme : "esadpyrenees" );
+  $theme_url = "theme/" . ( isset($theme) ? $theme : "ebabx" );
    
   // Util: format markdown text from files
   // build nav
