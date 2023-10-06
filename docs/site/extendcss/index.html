@@ -91,8 +91,6 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#changer-le-caractere-typographique">Changer le caractère typographique</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#supprimer-lidentite-de-lesad-pyrenees">Supprimer l’identité de l’ÉSAD Pyrénées</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#modifier-le-format">Modifier le format</a>
     </li>
     </ul>
@@ -145,19 +143,6 @@
   --fontfamily: &quot;Superserif&quot;, serif;
   …
 }
-</code></pre>
-<h3 id="supprimer-lidentite-de-lesad-pyrenees">Supprimer l’identité de l’ÉSAD Pyrénées</h3>
-<p>Pour la couverture, supprimer l’arrière-plan du <code>header</code> dans le fichier <code>css/print.css</code> :</p>
-<pre><code class="language-css">#header {
-  /*background: url(logo.svg) no-repeat 0 100%;*/
-}
-</code></pre>
-<p>Pour les titre courants, supprimer l’image dans le fichier <code>body.php</code>:</p>
-<pre><code class="language-html">&lt;!-- le folio courant (version print) --&gt;
-&lt;div class=&quot;runningfolio&quot;&gt;
-    &lt;span class=&quot;folio&quot;&gt;&lt;/span&gt;
-    &lt;!-- &lt;img src=&quot;css/logo.png&quot; alt=&quot;ESAD Pyrénées&quot;&gt; --&gt;
-&lt;/div&gt;
 </code></pre>
 <h3 id="modifier-le-format">Modifier le format</h3>
 <p>Format et marges</p>
