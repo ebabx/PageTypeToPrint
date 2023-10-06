@@ -7,7 +7,7 @@ Il produit un contenu lisible en ligne sous la forme d’une page web et permet 
 
 👏 Il 👏 est 👏 souhaitable 👏 de 👏 lire 👏 attentivement 👏 la 👏 documentation 👏 avant 👏 de 👏 démarrer. 👏
 
-[**↪ Accèder à la documentation**](https://esadpyrenees.github.io/PageTypeToPrint/)
+[**↪ Accèder à la documentation**](https://ebabx.github.io/PageTypeToPrint/)
 
 ## Crédits
 
