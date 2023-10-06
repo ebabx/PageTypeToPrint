@@ -1,6 +1,6 @@
 ## Thème
 
-Le thème par défaut (`theme/esadpyrenees`) contient deux dossiers – pour les scripts `js` et les feuilles de style `CSS` – et trois fichiers: `body.php`, `print_head.php` et `screen_head.php`.
+Le thème par défaut (`theme/ebabx`) contient deux dossiers – pour les scripts `js` et les feuilles de style `CSS` – et trois fichiers: `body.php`, `print_head.php` et `screen_head.php`.
 
 ### Modifier le thème
 
