@@ -20,7 +20,7 @@ PageTypeToPrint est un outil qui…
 
 ### Démo
 
-Une démo est accessible en ligne sur [https://design-ebabx.fr/web2print/memoire/](https://design-ebabx.fr/web2print/memoire/) avec sa version [_print_](https://design-ebabx.fr/web2print/memoire/?print) et le [document pdf](https://design-ebabx.fr/web2print/memoire/document.pdf) généré. 
+Une démo est accessible en ligne sur [https://design-ebabx.fr/web2print/memoire/](https://design-ebabx.fr/web2print/memoire/) avec sa version [_print_](https://design-ebabx.fr/web2print/memoire/?print) et le [document pdf](https://design-ebabx.fr/web2print/memoire/memoire.pdf) généré. 
 
 ### Open source
 

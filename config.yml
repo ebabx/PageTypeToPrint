@@ -27,7 +27,7 @@ mention: Mention Design <br class='breakprint'>graphique Multimédia # <br class
 pole: Pôle Nouveaux médias
 
 # Le nom du fichier pdf généré, par ex. : titre-du-document--prenom-nom.pdf
-pdf: ""
+pdf: "memoire.pdf"
 
 # Structure du contenu (= sommaire)
 parts:
