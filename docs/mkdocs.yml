@@ -34,7 +34,7 @@ nav:
     - Notes avancées: advanced-notes.md
 
 theme:
-  name: null
+  name: readthedocs
   custom_dir: 'theme'
   include_search_page: true
   search_index_only: false
