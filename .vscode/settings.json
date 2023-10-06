@@ -1,0 +1,49 @@
+{
+    "beautify.config": "",
+    "sass.disableAutoIndent": true,
+    "sass.lint.enable": true,
+    "liveSassCompile.settings.formats": [
+        
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "liveSassCompile.settings.autoprefix": [ 
+        "> 1%",
+        "last 2 versions"
+    ],
+    "liveSassCompile.settings.includeItems": [ ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**" 
+    ],
+    "liveServer.settings.ignoreFiles": [
+        ".vscode/**",
+        "**/*.ts"
+    ],
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Monokai",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "scss.lint.duplicateProperties": "warning",
+  
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.donotShowInfoMsg": false,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.host": "127.0.0.1",
+    "liveServer.settings.useWebExt": true,
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.useLocalIp": false,
+    "prettier.useTabs": true,
+}
