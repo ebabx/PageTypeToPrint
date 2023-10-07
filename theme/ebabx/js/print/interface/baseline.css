@@ -58,11 +58,11 @@
         );
     }
     
-    .appendices {
+    .repere .appendices {
         position: relative;
     }
 
-    .appendices::before {
+    .repere .appendices::before {
         position: absolute;
         top: 0;
         right: 0;

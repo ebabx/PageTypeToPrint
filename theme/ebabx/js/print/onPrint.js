@@ -64,3 +64,10 @@ Paged.registerHandlers(
     }
   }
 );
+
+document.addEventListener("keydown", function (event) {
+  let body = document.getElementsByTagName("body")[0];
+  if (event.key === "w") {
+    body.classList.toggle("repere");
+  }
+});

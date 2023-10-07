@@ -22,20 +22,20 @@ window.addEventListener('DOMContentLoaded', () => {
   // menu mobile: insère un bouton pour afficher/masquer le menu
   var togglemenu = document.createElement('button');
   togglemenu.textContent = "☰";
-  togglemenu.addEventListener('click', function(e){
+  togglemenu.addEventListener('click', function (e) {
     e.stopPropagation();
     index.classList.toggle('visible');
   })
   index.prepend(togglemenu);
 
-  index.addEventListener('click', function(){
+  index.addEventListener('click', function () {
     index.classList.remove('visible');
   })
-  
+
   // surligne le chapître courant au scroll
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      const id = entry.target.getAttribute('id');      
+      const id = entry.target.getAttribute('id');
       if (entry.intersectionRatio > 0) {
         document.querySelector(`#index li a[href="#${id}"]`).parentElement.classList.add('active');
       } else {
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   var downloadlink = quicklinks.querySelector('a:last-child');
   downloadlink.onclick = () => {
-    if(downloadlink.getAttribute('href') == ""){
+    if (downloadlink.getAttribute('href') == "") {
       alert("Un fichier PDF doit être généré et téléversé dans le dossier. Le nom du fichier doit être configuré dans config.php. Documentation: https://esadpyrenees.github.io/PageTypeToPrint/print/.")
     }
   }
