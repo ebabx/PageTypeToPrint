@@ -14,17 +14,16 @@ subtitle: ""
 name: George French
 
 # L’année, par ex. : 2021 – 2022
-year: 2023 – 2024 
+year: 2022-2023 
 
 # Votre diplôme, par ex. : DNA Design
-diploma: DNSEP Design
+diploma: <strong>ebabx</strong> école supérieure des beaux-arts de Bordeaux
 
-# Le mention du diplôme, par ex. : Mention Design graphique Multimédia
-mention: Mention Design <br class='breakprint'>graphique Multimédia # <br class="breakprint"> produit un saut uniquement en version print
+# Le mention du diplôme,
+mention: Mémoire de Diplôme National Supérieur d’Expression Plastique option Design conférant le grade de Master 2. # <br class="breakprint"> produit un saut uniquement en version print
 
-# Votre pôle éventuel, par ex. : Pôle Nouveaux médias
-# Pôle Image, édition &amp<br class="breakprint"> dessin de caractères
-pole: Pôle Nouveaux médias
+direction: Sous la direction de Franck Houndégla <br class="breakprint"> et Jean-Charles Zébo.
+
 
 # Le nom du fichier pdf généré, par ex. : titre-du-document--prenom-nom.pdf
 pdf: "memoire.pdf"

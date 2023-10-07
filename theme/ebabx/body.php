@@ -29,15 +29,13 @@
         <div class="meta-data">
         <!-- Votre diplôme, option et mention -->
         <p>
-            <?= $diploma ?> <br>
-            <?= $mention ?> 
+            <?= $mention  ?> <br> 
         </p>
         <p>
-            École supérieure <br class="breakprint">
-            d’art &amp; de design <br class="breakprint">
-            des&nbsp;Pyrénées<br><br class="breakprint">
-            <!-- Votre pôle éventuel -->
-            <?= $pole ?>
+            <?= $direction ?> 
+        </p>
+        <p>
+            <?= $diploma ?>
         </p>
         </div>
     </div>
