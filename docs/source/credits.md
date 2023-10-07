@@ -2,7 +2,7 @@
 
 PageTypeToPrint est développé par [Julien Bidoret](https://ateliers.esad-pyrenees.fr/web) pour la mise en page normalisée des mémoires et documents écrits de l’option Design graphique multimédia de l’[ÉSAD Pyrénées](https://esad-pyrenees.fr). 
 
-L'adaption de la version pour l'EBABX a été réalisée par [Didier Lechenne](lechenne.fr). 
+L'adaption de la version pour l'EBABX a été réalisée par [Didier Lechenne](https://lechenne.fr). 
 
 La maquette originale a été développée par [Perrine Saint Martin](https://typomorpho.fr/). 
 
