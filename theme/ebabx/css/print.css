@@ -366,7 +366,7 @@
     display: flex;
     flex-direction: column;
     line-height: 1.2;
-    max-width: 350px;
+    width: calc(var(--pagedjs-pagebox-width) - var(--pagedjs-margin-left) - var(--pagedjs-margin-right) - 50px - 20px);
     padding-left: 20px;
 }
 
@@ -440,7 +440,7 @@ ul>li:before {
   }
 
   #list-toc-generated .toc-element-level-2 {
-    margin-left: 16px;
+    /* margin-left: 16px; */
   }
   #list-toc-generated .toc-element-level-2 a::before {
     /* margin-left: calc(-4em - 40px); */
