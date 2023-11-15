@@ -355,32 +355,95 @@
     font-size: 1em;
   }
 
-  /* ------------------------------------------------------------------------ Table des matières */
+ /* ------------------------------------------------------------------------ Table des matières */
   
   #list-toc-generated {
     list-style: none;
     padding: 0;
   }
 
+  [data-id="list-toc-generated"] .toc-element {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    max-width: 350px;
+    padding-left: 20px;
+}
+
+ul>li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+[data-id="list-toc-generated"] .toc-element a {
+  right: 0;
+  text-decoration: none;
+}
+
+[data-id="list-toc-generated"] .toc-element a::after {
+  content: "p. " target-counter(attr(href), page);
+  font-weight: 400;
+  float: right;
+  position: absolute;
+  right: 0;
+  /* background-color: white; */
+  /* padding-left: 50px; */
+  font-size: inherit;
+  width:50px;
+  text-align: left;
+}
+
+
+/* counters */
+
+#list-toc-generated {
+  counter-reset: counterTocLevel1;
+}
+
+#list-toc-generated .toc-element-level-1 {
+  counter-increment: counterTocLevel1;
+  counter-reset: counterTocLevel2;
+}
+
+#list-toc-generated .toc-element-level-1::before {
+  content: counter(counterTocLevel1) ". ";
+  padding-right: 5px;
+}
+
+#list-toc-generated .toc-element-level-2 {
+  /* counter-increment: counterTocLevel2; */
+}
+
+#list-toc-generated .toc-element-level-2::before {
+  /* content: counter(counterTocLevel1) ". " counter(counterTocLevel2) ". ";
+  padding-right: 5px; */
+}
+
+
   #list-toc-generated .toc-element a::before {
-    content: target-counter(attr(href), page);
-    position: absolute;
+    /* content: target-counter(attr(href), page); */
+    /* position: absolute;
     left: 0;
-    margin-left: calc(-4em - 20px);
-    text-align: right;
+    margin-left: calc(-4em - 20px); */
+    /* text-align: left;
     width: 4em;
+    display: inline-block; */
   }
 
   #list-toc-generated .toc-element-level-1 {
     font-weight: bold;
-    margin-top: 1em;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    /* margin-top: 1em; */
   }
 
   #list-toc-generated .toc-element-level-2 {
-    margin-left: 20px;
+    margin-left: 16px;
   }
   #list-toc-generated .toc-element-level-2 a::before {
-    margin-left: calc(-4em - 40px);
+    /* margin-left: calc(-4em - 40px); */
   }
 
 
