@@ -24,6 +24,10 @@
 <!-- full-page -->
 <script src="<?= $theme_url ?>/js/print/full-page.js" type="text/javascript"></script>
 <script src="<?= $theme_url ?>/js/print/csstree.min.js" type="text/javascript"></script>
+<!-- ragadjust -->
+<script src="<?= $theme_url ?>/js/print/ragadjust.js" type="text/javascript"></script>
+<script src="<?= $theme_url ?>/js/print/ragadjust-hook.js" type="text/javascript"></script>
+
 
 <!-- Aide pour la mise en page des images -->
 <?php if(isset($_GET["layout"])): ?>
