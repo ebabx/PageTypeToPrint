@@ -1,10 +1,11 @@
-# ÉSAD Pyrénées
+# EBABX - École supérieure des Beaux-Arts de Bordeaux
 
-Ce dossier contient le thème par défaut développé pour les mémoires de DNSEP et documents écrits de DNA de l’École supérieure d’art et de design des Pyrénées.
+Ce dossier contient le thème par défaut développé pour les mémoires de DNSEP et documents écrits de DNA de l’École supérieure des Beaux-Arts de Bordeaux.
 
 ## Crédits
 
-PageTypeToPrint est développé par [Julien Bidoret](https://ateliers.esad-pyrenees.fr/web).  
+PageTypeToPrint est développé par [Julien Bidoret](https://ateliers.esad-pyrenees.fr/web).
+Le développement du thème EBABX est réalisé par [Didier Lechenne](d.lechenne@lechenne.fr).
 La maquette originale a été développée par [Perrine Saint Martin](https://typomorpho.fr/). 
 
 L’outil s’appuie sur plusieurs librairies : 
