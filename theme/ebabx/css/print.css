@@ -183,6 +183,16 @@
     height: 0;
     page-break-before: always;
   }
+  
+  .breakpage-left{
+    display:none;
+    page-break-before: left;
+  }
+
+  .breakpage-right{
+    display:none;
+    page-break-before: right;
+  }
   .breakcolumn{
     break-before:column;
     break-after:column;
