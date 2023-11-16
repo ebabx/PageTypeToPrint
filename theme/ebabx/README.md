@@ -5,7 +5,7 @@ Ce dossier contient le thème par défaut développé pour les mémoires de DNSE
 ## Crédits
 
 PageTypeToPrint est développé par [Julien Bidoret](https://ateliers.esad-pyrenees.fr/web).
-Le développement du thème EBABX est réalisé par [Didier Lechenne](d.lechenne@lechenne.fr).
+Le développement du thème EBABX est réalisé par [didier Lechenne](https://lechenne.fr).
 La maquette originale a été développée par [Perrine Saint Martin](https://typomorpho.fr/). 
 
 L’outil s’appuie sur plusieurs librairies : 
