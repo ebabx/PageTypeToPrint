@@ -1,78 +1,44 @@
-### Patataprint
-### Configuration 
-
-# Le thème à utiliser
-theme: "ebabx"
-
-# Le titre du document
-title: Printing in Relation <br class='breakprint'>to Graphic&nbsp;Art # &nbsp; = espace insécable, <br class="breakprint"> produit un saut uniquement en version print
-
-# Le sous-titre éventuel du document
-subtitle: ""
-
-# Votre nom
-name: George French
-
-# L’année, par ex. : 2021 – 2022
-year: 2022-2023 
-
-# Votre école
-diploma: EBABX - École supérieure des Beaux-Arts de Bordeaux 
-
-# Le mention du diplôme,
-mention: Mémoire de Diplôme National Supérieur d’Expression Plastique option Design conférant le grade de Master 2. # <br class="breakprint"> produit un saut uniquement en version print
-
-# Direction ou co-direction
-direction: Sous la direction de Franck Houndégla <br class="breakprint"> et Jean-Charles Zébo.
-
-# Le chemin pour accéder à l'image de couverture
-cover_img: content/images/vertical.svg
-
-# Le nom du fichier pdf généré, par ex. : titre-du-document--prenom-nom.pdf
-pdf: "memoire.pdf"
-
-# Structure du contenu (= sommaire)
 parts:
   - title: Prefatory Note
-    file : content/text/0.prefatorynote.md
+    file : projets/ebabx-2-3/text/0.prefatorynote.md
     template : default
   
   - title: Introduction
-    file: content/text/1.intro.md
+    file: projets/ebabx-2-3/text/1.intro-sans-imagenote.md
     template: default
   
   - title: Art in Printing
-    file: content/text/2.artinprinting.md
+    file: projets/ebabx-2-3/text/2.artinprinting.md
     template: default
    
   - title: Pictorial Composition
-    file: content/text/3.pictorial.md
+    file: projets/ebabx-2-3/text/3.pictorial.md
     template: default
    
   - title: Type Composition
-    file: content/text/4.type.md
+    file: projets/ebabx-2-3/text/4.type.md
     template: default
    
   - title: Conclusion
-    file: content/text/5.conclusion.md
-    template: default
+    file: projets/ebabx-2-3/text/5.conclusion.md
+    template: conclusion
    
   - title: Annexes
-    file: content/text/6.annexes.md
+    file: projets/ebabx-2-3/text/6.annexes.md
     template: appendices
    
   - title: Entretiens
-    file: content/text/7.entretiens.md
+    file: projets/ebabx-2-3/text/7.entretiens.md
     template: interview
    
   - title: Glossaire
-    file: content/text/8.glossaire.md
+    file: projets/ebabx-2-3/text/8.glossaire.md
     template: references
    
   - title: Références
-    file: content/text/9.references.md
+    file: projets/ebabx-2-3/text/9.references.md
     template: references
    
   - title: Remerciements
-    file: content/text/10.remerciements.md
+    file: projets/ebabx-2-3/text/10.remerciements.md
     template: thanks
