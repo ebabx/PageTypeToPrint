@@ -27,52 +27,52 @@ mention: Mémoire de Diplôme National Supérieur d’Expression Plastique, Opti
 direction: Sous la direction de Prenom&nbsp;Nom et de Prenom&nbsp;Nom.
 
 # Le chemin pour accéder à l'image de couverture
-cover_img: projets/ebabx/images/vertical.svg
+cover_img: content/images/vertical.svg
 
 # Le nom du fichier pdf généré, par ex. : titre-du-document--prenom-nom.pdf
 pdf: "memoire.pdf"
 
 parts:
   - title: Prefatory Note
-    file : projets/ebabx/text/0.prefatorynote.md
+    file : content/text/0.prefatorynote.md
     template : default
   
   - title: Introduction
-    file: projets/ebabx/text/1.intro-sans-imagenote.md
+    file: content/text/1.intro-sans-imagenote.md
     template: default
   
   - title: Art in Printing
-    file: projets/ebabx/text/2.artinprinting.md
+    file: content/text/2.artinprinting.md
     template: default
    
   - title: Pictorial Composition
-    file: projets/ebabx/text/3.pictorial.md
+    file: content/text/3.pictorial.md
     template: default
    
   - title: Type Composition
-    file: projets/ebabx/text/4.type.md
+    file: content/text/4.type.md
     template: default
    
   - title: Conclusion
-    file: projets/ebabx/text/5.conclusion.md
+    file: content/text/5.conclusion.md
     template: conclusion
    
   - title: Annexes
-    file: projets/ebabx/text/6.annexes.md
+    file: content/text/6.annexes.md
     template: appendices
    
   - title: Entretiens
-    file: projets/ebabx/text/7.entretiens.md
+    file: content/text/7.entretiens.md
     template: interview
    
   - title: Glossaire
-    file: projets/ebabx/text/8.glossaire.md
+    file: content/text/8.glossaire.md
     template: references
    
   - title: Références
-    file: projets/ebabx/text/9.references.md
+    file: content/text/9.references.md
     template: references
    
   - title: Remerciements
-    file: projets/ebabx/text/10.remerciements.md
+    file: content/text/10.remerciements.md
     template: thanks
