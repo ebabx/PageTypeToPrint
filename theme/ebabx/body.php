@@ -1,43 +1,34 @@
+
+<div id="cover" >
+    <img src=<?= $cover_img ?> alt="">
+</div>
+
 <header id="header">
-    <!-- Le titre du mémoire / doc écrit -->
-    <h1><?= $title ?></h1>
+        <div class="entete">
+        <!-- Le titre du mémoire / doc écrit -->
+        <h1><?= $title ?></h1>
 
-    <!-- Le sous-titre éventuel (si pas de sous-titre, supprimer le h2) -->
-    <h2><?= $subtitle ?></h2>
-
-    <!-- le titre courant (version print) -->
-    <div class="runningtitle">
-        <div><?= $name ?></div>
-        <div><?= $title ?></div>
-    </div>
-
-    <!-- le folio courant (version print) -->
-    <div class="runningfolio">
-        <span class="folio"></span>
-        <!-- Logo ÉSAD Pyrénées -->
-        <!-- <img src="<?= $theme_url ?>/css/logo.png" alt="ESAD Pyrénées"> -->
-        <!-- Votre diplôme -->
-        <span class="diploma"><?= $diploma ?></span>
+        <!-- Le sous-titre éventuel (si pas de sous-titre, supprimer le h2) -->
+        <h2><?= $subtitle ?></h2>
+        
+        <!-- Votre nom -->
+        <div class="meta-name"><?= $name ?></div>
     </div>
 
     <!-- les méta-données -->
     <div class="meta">
-        <!-- l’année YYYY – YYYY  -->
-        <div class="meta-year"><?= $year ?></div>
-        <!-- Votre nom -->
-        <div class="meta-name"><?= $name ?></div>
-        <div class="meta-data">
-        <!-- Votre diplôme, option et mention -->
-        <p>
-            <?= $mention  ?> <br> 
-        </p>
-        <p>
-            <?= $direction ?> 
-        </p>
-        <p>
-            <?= $diploma ?>
-        </p>
-        </div>
+
+            <p>
+                <?= $mention  ?>
+            </p>
+            <p>
+                <?= $direction ?> 
+            </p>
+            <p>
+                <?= $diploma ?><br>
+                <!-- l’année YYYY – YYYY  -->
+                <?= $year ?>
+            </p>
     </div>
 
     <!-- les liens rapides: lire, imprimmer, télécharger -->
