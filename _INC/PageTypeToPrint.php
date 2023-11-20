@@ -169,7 +169,10 @@
     $mdit->plugin(new MarkdownItSup() );
     $mdit->plugin(new MarkdownItAbbr() );
     // MarkdownIt custom plugins
+     $mdit->plugin(new MarkdownItContainer(), "grid");
     $mdit->plugin(new MarkdownItContainer(), "columns");
+    $mdit->plugin(new MarkdownItContainer(), "columns-2");
+    $mdit->plugin(new MarkdownItContainer(), "columns-3");
     $mdit->plugin(new MarkdownItContainer(), "glossary", ["marker" => "¶"]);
     $mdit->plugin(new MarkdownItContainer(), "term");
 
