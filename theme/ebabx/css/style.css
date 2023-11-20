@@ -16,35 +16,44 @@ Sommaire :
 */
 
 
+
 /* ------------------------------------------------------------------------ Fonts */
 @font-face {
-  font-family: "Ecole";
-  src: url("fonts/Ecole-Italic.woff2") format("woff2"),
-    url("fonts/Ecole-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400; /*normal*/
+  font-display: swap;
+  src: url("fonts/inter/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400; /*italic*/
+  font-display: swap;
+  src: url("fonts/inter/Inter-Italic.woff2") format("woff2");
 }
 
-@font-face {
-  font-family: "Ecole";
-  src: url("fonts/Ecole-Regular.woff2") format("woff2"),
-    url("fonts/Ecole-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
-  font-family: "Ecole";
-  src: url("fonts/Ecole-Bold.woff2") format("woff2"),
-    url("fonts/Ecole-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700; /*gras*/
+  font-display: swap;
+  src: url("fonts/inter/Inter-Bold.woff2") format("woff2");
 }
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 700; /*gras italic*/
+  font-display: swap;
+  src: url("fonts/inter/Inter-BoldItalic.woff2") format("woff2");
+}
+
 
 /* ------------------------------------------------------------------------ Variables */
 :root {
   /* typographie */
-  --fontfamily: "Ecole", sans-serif;
+  --fontfamily: "Inter", sans-serif;
   --bigsize: clamp(2.50rem, calc(1.83rem + 3.33vw), 6.00rem);
   --basesize: 1.15rem;
   --color: rgba(0, 0, 0, 0.85);
@@ -67,6 +76,8 @@ Sommaire :
 }
 
 /* ------------------------------------------------------------------------ Common */
+/* box model */
+
 /* box model */
 *, *::after, *::before { box-sizing: border-box; }
 /* smooth scroll */
@@ -101,38 +112,87 @@ hr{
 }
 
 /* ------------------------------------------------------------------------ Cover */
+#cover {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #4268B0; */
+}
+
+#cover img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 100% 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* ------------------------------------------------------------------------ faux-titre */
+
 #header {
   min-height: 100vh;
   padding: var(--spacer);
+  max-width: 50vw;
+  /* background-color: #4268B0; */
+  /* color: #fff; */
 }
+
+#header .entete {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+#header .meta {
+  display: block;
+  position: absolute;
+  bottom: 200px;
+  font-family: 'inter';
+  /*700 = gras; 400 = normal*/
+  font-weight: 400; 
+
+  margin-top: 2rem;
+
+  max-width: 50vw;
+  font-size: calc(var(--bigsize) * .2);
+}
+
 #header h1 {
   margin: 0;
   line-height: 1.1;
   max-width: calc(var(--bigsize) * 16);
   font-size: calc(var(--bigsize) * 1);
-  color: var(--accentcolor);
+  /* color: #fff; */
 }
 #header h2 {
   margin: 0;
   line-height: 1.2;
   max-width: calc(var(--bigsize) * 16);
-  font-size: calc(var(--bigsize) * .75);
-  color: var(--accentcolor);
+  font-size: calc(var(--bigsize) * .50);
+  /* color: #fff; */
 }
 #header h2::before{
   content: "";
   display: block;
   width: 1ch;
-  border-top: 2px solid ;
+  border-top: 0px solid ;
   margin: .5em 0;
 }
 #header h2:empty { display: none;}
-.meta {
-  display: grid;
-  grid-gap: var(--spacer);
-  grid-template-columns: 15vw minmax(250px, 1fr) minmax(250px, 1fr);
+
+
+.meta-name {
+  font-weight: 700;
+  /* font-family: 'inter'; */
   margin-top: 2rem;
+  /* max-width: calc(var(--bigsize) * 16); */
+  font-size: calc(var(--bigsize) * .30);
 }
+
 #quicklinks {
   position: absolute;
   bottom: var(--spacer);
@@ -170,14 +230,17 @@ hr{
   margin: 0;
   font-size: 1em;
 }
-.nav-default + .nav-appendices { margin-top: 1em;}
+
+
 
 #nav ul,
 #index ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
+
+.nav-appendices { margin-top: 1em;}
+
+
 /* #index : le sommaire, une fois cloné */
 #index {
   position: sticky;
@@ -281,6 +344,7 @@ main h1 {
 main h2 {
   font-size: 1em;
 }
+
 main h3 {
   font-size: 1em;
   margin-left: 2em;
@@ -327,11 +391,14 @@ main blockquote {
 @media screen and (max-width:40rem) {
   .interview p { --indent: 0 }
 }
+
 .interview p:nth-child(1) strong:first-child,
 .interview p:nth-child(2) strong:first-child {
-  text-align: left;
+  /* text-align: left; */
+  text-align: right;
 }
 .interview :not([data-split-from]) strong:first-child {
+  --indent: 8em;
   margin-left: calc(var(--indent) * -1);
   min-width: calc(var(--indent) - 1em);
   /* float: left; */
@@ -368,8 +435,14 @@ main blockquote {
 /* ------------------------------------------------------------------------ Colonnes */
 .columns {
   font-size: 0.85em;
-  columns: 3;
+  columns: 1;
   column-gap: var(--spacer);
+}
+.columns-2 {
+  columns: 2;
+}
+.columns-3 {
+  columns: 3;
 }
 .columns p {
   break-inside: avoid;
@@ -560,6 +633,13 @@ hr.footnotes-sep {
 }
 
 /* ------------------------------------------------------------------------ Images annexes (template = appendices) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: var(--spacer);
+  align-content: start;
+}
+
 .appendices .content {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -653,3 +733,27 @@ figcaption::before {
 .video + figcaption {
   margin-top: -1em;
 }
+
+ /* ------------------------------------------------------------------------ util */
+
+
+ .visible, .print-visible{
+  position: unset !important;
+  border: unset !important;
+  height: unset !important;
+  width: unset !important;
+  padding: unset !important;
+  overflow: hidden !important;
+  clip: rect(inset, inset, inset, inset) !important;
+}
+
+.invisible{
+  position: absolute !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+
