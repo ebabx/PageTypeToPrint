@@ -26,7 +26,7 @@ mention: Mémoire de Diplôme National Supérieur d’Expression Plastique optio
 direction: Sous la direction de Franck Houndégla <br class="breakprint"> et Jean-Charles Zébo.
 
 # Le chemin pour accéder à l'image de couverture
-cover_img: content/images/couverture.jpg
+cover_img: content/images/vertical.svg
 
 # Le nom du fichier pdf généré, par ex. : titre-du-document--prenom-nom.pdf
 pdf: "memoire.pdf"
