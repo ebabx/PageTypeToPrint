@@ -5,7 +5,7 @@
 <!-- Styles print -->
 <link rel="stylesheet" href="<?= $theme_url ?>/css/print.css" media="print">    
 <!-- full-page -->
-<link rel="stylesheet" href="<?= $theme_url ?>/js/print/interface/full-page.css" media="print">
+<link rel="stylesheet" href="<?= $theme_url ?>/js/print/full-page.css" media="print">
 
 <!-- Paged.js -->
 <script src="<?= $theme_url ?>/js/print/paged.polyfill.js"></script>
