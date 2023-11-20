@@ -444,12 +444,15 @@ main blockquote {
 .columns-3 {
   columns: 3;
 }
+.columns-2 p,
+.columns-3 p,
 .columns p {
   break-inside: avoid;
   max-width: 28em;
 }
+
 @media screen and (max-width:30rem) {
-  .columns { columns: 1;}
+  .columns,.columns-2,.columns-3 { columns: 1;}
 }
 /* ------------------------------------------------------------------------ Images de notes */
 /* footnotes */
