@@ -741,13 +741,7 @@ figcaption::before {
 
 
  .visible, .print-visible{
-  position: unset !important;
-  border: unset !important;
-  height: unset !important;
-  width: unset !important;
-  padding: unset !important;
-  overflow: hidden !important;
-  clip: rect(inset, inset, inset, inset) !important;
+
 }
 
 .invisible{
