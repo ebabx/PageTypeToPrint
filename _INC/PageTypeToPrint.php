@@ -138,7 +138,7 @@
 
       // According to template, set the HTML structure of part
       if($template != "default"){
-        $content = "<div class='runningtitle'><div>$name</div><div>$part_title</div></div>\n\n$content";
+        $content = "<div class='runningtitle'><div>$part_title</div></div>\n\n$content";
       }
       if($template == "appendices" || $template == "autofolder"){
         $content = "<h2>$part_title</h2><div class='content' markdown=1>\n\n$content\n\n</div>";
