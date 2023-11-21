@@ -694,15 +694,15 @@ padding-right: 5px; */
 
   ::footnote-call {
     font-weight: bold;
-    content: "[" counter(footnote) "] ";
-    font-variant-position: normal;
-    vertical-align: baseline;
-    font-size: 100%;
+    content: counter(footnote);
     padding-left: 0.25em;
+    top: 0.1em;
+    position: relative;
+    line-height: 0;
   }
 
   ::footnote-marker {
-    content: "[" counter(footnote-marker) "] ";
+    content: counter(footnote-marker) ".  ";
     font-weight: bold;
   }
 
