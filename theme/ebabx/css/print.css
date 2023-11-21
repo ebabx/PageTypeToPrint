@@ -709,6 +709,11 @@ padding-right: 5px; */
   .pagedjs_footnote_inner_content {
     font-size: var(--smallsize);
     margin-top: 1em;
+
+    column-width: 2px!important;
+    column-count: 2!important;
+    column-gap: 20px!important;
+    height: auto!important;
   }
 
   /* ------------------------------------------------------------------------ Autofolder */
